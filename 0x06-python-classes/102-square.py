@@ -4,8 +4,14 @@
 
 
 class Square:
+    """Represent a square."""
 
     def __init__(self, size=0):
+        """Initialize a new square.
+
+        Args:
+            size (int): The size of the new square.
+        """
         self.size = size
 
     @property
@@ -38,10 +44,13 @@ class Square:
         return self.area() < other.area()
 
     def __le__(self, other):
+        """Define the <= comparison to a Square."""
         return self.area() <= other.area()
 
     def __gt__(self, other):
+        """Define the > comparison to a Square."""
         return self.area() > other.area()
 
     def __ge__(self, other):
+        """Define the >= compmarison to a Square."""
         return self.area() >= other.area()
